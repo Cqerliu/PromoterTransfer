@@ -35,7 +35,7 @@ def main():
         image.save('./test/test' + str(index) + '.tif')
         index = index + 1
 
-    # 存放图片的文件夹路径
+    # File path
     WSI_MASK_PATH = './test/'
     paths = glob.glob(os.path.join(WSI_MASK_PATH, '*.tif'))
     paths.sort()
