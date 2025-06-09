@@ -35,7 +35,7 @@ This project provides a transfer learning framework combining **Word2Vec embeddi
 2. **Prepare the data** by converting it into FASTA format.
 
 ### Model Training
-**Run the training script**: Training.py is used to train and generate the pre-trained model in the source domain and the target model in the target domain. There are instructions on how to generate the two models in the source code (can run in both CPU and GPU environments).
+**Run the training script**: Training-Onehot.py and Training-Word2Vec.py respectively use Onehot and Word2Vec encoding for DNA sequences to train pre-trained models in the source domain and generate target models in the target domain.
 
 ### Promoter Prediction
 **Run the prediction script**: Prediction.py is used to predict the promoter sequences in the target domain using the pre-trained model. The script reads the test data, and uses the pre-trained model to make predictions.
